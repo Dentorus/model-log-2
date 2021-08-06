@@ -2,11 +2,11 @@
 
   Install hook
   
-    php artisan hook:install model-log
+    composer require dentorus/model-log-2
 
   Enable hook
   
-    php artisan hook:enable model-log
+    php artisan hook:enable dentorus/model-log-2
 
   Publishing config
   
