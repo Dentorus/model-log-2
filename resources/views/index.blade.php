@@ -10,7 +10,7 @@
         <h1 class="page-title">
             <i class="voyager-logbook"></i> {{ __('modellog::modellog.model_logs') }}
         </h1>
-        @can('clear', app('Jahondust\ModelLog\Models\ModelLog'))
+        @can('clear', app('Dentorus\ModelLog\Models\ModelLog'))
             @include('modellog::partials.clear')
         @endcan
     </div>

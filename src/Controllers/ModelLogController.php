@@ -1,11 +1,11 @@
 <?php
 
-namespace Jahondust\ModelLog\Controllers;
+namespace Dentorus\ModelLog\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
-use Jahondust\ModelLog\Models\ModelLog;
+use Dentorus\ModelLog\Models\ModelLog;
 use Illuminate\Support\Facades\File;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Http\Controllers\Controller;

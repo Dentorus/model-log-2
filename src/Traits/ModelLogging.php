@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Jahondust\ModelLog\Traits;
+namespace Dentorus\ModelLog\Traits;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Jahondust\ModelLog\Models\ModelLog;
+use Dentorus\ModelLog\Models\ModelLog;
 
 trait ModelLogging
 {

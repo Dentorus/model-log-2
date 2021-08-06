@@ -10,7 +10,7 @@
 
   Publishing config
   
-    php artisan vendor:publish --provider="Jahondust\ModelLog\ModelLogServiceProvider"
+    php artisan vendor:publish --provider="Dentorus\ModelLog\ModelLogServiceProvider"
 
 
 #### How to use Model logging
@@ -24,7 +24,7 @@ table in your database.You can use it, simply adding  "use ModelLogging;" in you
 	namespace App;
 
 	use Illuminate\Database\Eloquent\Model;
-	use Jahondust\ModelLog\Traits\ModelLogging;
+	use Dentorus\ModelLog\Traits\ModelLogging;
 
 	class Post extends Model
 	{

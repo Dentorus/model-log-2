@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Jahondust\ModelLog\Policies;
+namespace Dentorus\ModelLog\Policies;
 
 
 use App\User;
-use Jahondust\ModelLog\Models\ModelLog;
+use Dentorus\ModelLog\Models\ModelLog;
 
 class ModelLogPolicy
 {

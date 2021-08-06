@@ -1,5 +1,5 @@
 {
-    "name": "model-log",
+    "name": "dentorus/model-log-2",
     "description": "Voyager Model Log",
     "type": "library",
     "tags": [
@@ -13,18 +13,18 @@
     },
     "license": "MIT",
     "authors": [{
-        "name": "Jahongir Dustqulov",
-        "email": "jahondust@gmail.com"
+        "name": "Bohdan Maksymeniuk",
+        "email": "bohdan2308@gmail.com"
     }],
     "autoload": {
         "psr-4": {
-            "Jahondust\\ModelLog\\": "src/"
+            "Dentorus\\ModelLog\\": "src/"
         }
     },
     "extra": {
         "hook": {
             "providers": [
-                "Jahondust\\ModelLog\\ModelLogServiceProvider"
+                "Dentorus\\ModelLog\\ModelLogServiceProvider"
             ]
         }
     },

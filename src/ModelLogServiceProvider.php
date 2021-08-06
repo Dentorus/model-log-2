@@ -1,13 +1,13 @@
 <?php
 
-namespace Jahondust\ModelLog;
+namespace Dentorus\ModelLog;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use Jahondust\ModelLog\Models\ModelLog;
-use Jahondust\ModelLog\Policies\ModelLogPolicy;
+use Dentorus\ModelLog\Models\ModelLog;
+use Dentorus\ModelLog\Policies\ModelLogPolicy;
 use TCG\Voyager\Models\Menu;
 use TCG\Voyager\Models\MenuItem;
 use TCG\Voyager\Models\Permission;
@@ -65,7 +65,7 @@ Class ModelLogServiceProvider extends ServiceProvider
     }
 
     public function addRoutes($router){
-        $namespacePrefix = '\\Jahondust\\ModelLog\\Controllers\\';
+        $namespacePrefix = '\\Dentorus\\ModelLog\\Controllers\\';
         $router->get('model_log', ['uses' => $namespacePrefix.'ModelLogController@browse', 'as' => 'model_log.index']);
         $router->delete('model_log_clear', ['uses' => $namespacePrefix.'ModelLogController@clear', 'as' => 'model_log.clear']);
         $router->get('modal_log_assets', ['uses' => $namespacePrefix.'ModelLogController@assets', 'as' => 'model_log.assets']);
@@ -106,7 +106,7 @@ Class ModelLogServiceProvider extends ServiceProvider
      */
     private function loadModels(){
         foreach($this->models as $model){
-            $namespacePrefix = 'Jahondust\\ModelLog\\Models\\';
+            $namespacePrefix = 'Dentorus\\ModelLog\\Models\\';
             if(!class_exists($namespacePrefix . $model)){
                 @include(__DIR__.'/Models/' . $model . '.php');
             }

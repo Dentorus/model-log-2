@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Jahondust\ModelLog\Models;
+namespace Dentorus\ModelLog\Models;
 
 use App\User;
 use Illuminate\Database\Eloquent\Model;
